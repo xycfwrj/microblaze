@@ -10,7 +10,7 @@ notes on microblaze mcs application
 ## 4.I did not try it, but here provides a good tutorial on interrupt handling.
   https://www.eit.lth.se/fileadmin/eit/courses/eit070/Laborationer/EIT070Lab04.pdf
    the interrupt controller has too many function calling and I think it consumes too much stack.
-## 5.the sample code, the release version consumes resources as below, 
+## 5.for the sample code, the release version consumes resources as below, 
    text	   data	    bss	    dec	    hex	filename
    3488	    360	   1096	   4944	   1350	hh.elf
    only 1.3KB used, comparable to PicoBalze's 1KW instructions.
