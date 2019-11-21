@@ -17,3 +17,5 @@ notes on microblaze mcs application
   - 3488	    360	   1096	   4944	   1350	hh.elf
    
    only 1.3KB used, comparable to PicoBalze's 1KW instructions.
+## 6. I have not yet handled QSPI flash, but some people are complaining its low performance.
+## 7.Considering its poor performance, it is better to have an external cortex-M MCU if complicated logics exist.
