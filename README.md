@@ -1,4 +1,4 @@
-# microblaze
+# MicroBlaze MCS
 notes on microblaze mcs application
 
 
