@@ -13,6 +13,6 @@ notes on microblaze mcs application
    
    the original intc initialization has too many function calling and I think it consumes too much stack.
 ## 5.for the sample code, the release version consumes resources as below, 
-   text	   data	    bss	    dec	    hex	filename
-   3488	    360	   1096	   4944	   1350	hh.elf
+  - text	   data	    bss	    dec	    hex	filename
+  - 3488	    360	   1096	   4944	   1350	hh.elf
    only 1.3KB used, comparable to PicoBalze's 1KW instructions.
