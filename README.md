@@ -16,6 +16,8 @@ notes on microblaze mcs application
   - text	   data	    bss	    dec	    hex	filename
   - 3488	    360	   1096	   4944	   1350	hh.elf
    
-   only 1.3KB used, comparable to PicoBalze's 1KW instruction ROM
+   only 1.3KB used, comparable to PicoBalze's 1KW instruction ROM.
+   Since I do not need print and memcpy and etc, .heap size is reduced to 0x20 to optimize code size.
+   I will only maintain a while loop, without nested function calls, stack size is set as 0x400, maybe it can be further reduced.
 6. I have not yet handled QSPI flash, but some people are complaining its low performance.
 7. Considering its poor performance, it is better to have an external cortex-M MCU if complicated logics exist.
