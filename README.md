@@ -6,7 +6,8 @@ notes on microblaze mcs application
 ## 2.so only use microblaze MCS' MDM/IO BUS/GPI/GPO for simplicity.
 ## 3.use register operation to speed GPIO/IOB BUS access(the driver consumes too many cycles), with it,
   - a GPI+GPO takes 14 cycles
-  - a IO BUS write takes 21 cycles.
+  - a IO BUS write takes 13 cycles.
+  - a IO BUS write plus some basic logics take 21 cycles
 ## 4.I did not try it, but here provides a good tutorial on interrupt handling.
   https://www.eit.lth.se/fileadmin/eit/courses/eit070/Laborationer/EIT070Lab04.pdf
    the interrupt controller has too many function calling and I think it consumes too much stack.
