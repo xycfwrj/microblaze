@@ -3,7 +3,7 @@ notes on microblaze mcs application
 
 
 1. only use microblaze to offload fpga complicated FSMs. Picoblaze does not support C compiler, so not use it.
-2. so only use microblaze MCS' MDM/IO BUS/GPI/GPO for simplicity. You have to choose MDM to enable SDK IDE debug&download.
+2. only use microblaze MCS' MDM/IO BUS/GPI/GPO for simplicity. You have to choose MDM to enable SDK IDE debug&download. Without MDM you need compile .elf into bitstream and download it in vivado.
 3. use register operation to speed GPIO/IOB BUS access(the driver consumes too many cycles), with it,
   - a GPI+GPO takes 14 cycles
   - a IO BUS write takes 13 cycles.
